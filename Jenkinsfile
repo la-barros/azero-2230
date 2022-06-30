@@ -2,7 +2,7 @@ pipiline {
     agent {
         docker {
             image "ruby"
-            args "--link selenium_server"
+            //args "--link selenium_server"
         }
     }
     stages {
@@ -13,8 +13,10 @@ pipiline {
         }    
         stage("Run Testes") {
             steps {
-             sh "bundle exec cucumber -p ci -t @smoke"
+             sh "bundle exec cucumber -t @smoke"
             }
         }
     }
 }
+
+
