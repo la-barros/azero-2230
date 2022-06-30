@@ -1,24 +1,7 @@
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 pipiline {
-   // agent {
+    agent {}
         //docker {
             //image "ruby"
             //args "--link selenium_server"
